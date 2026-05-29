@@ -1,13 +1,12 @@
 import { Instagram, Facebook, Youtube } from "lucide-react";
+import logoUrl from "@/assets/logo.png";
 
 export function Footer() {
   return (
     <footer className="bg-midnight text-ivory">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4 md:px-10 md:py-20">
         <div className="md:col-span-2">
-          <span className="font-display text-2xl">
-            ReCreate <span className="text-gold">Living</span>
-          </span>
+          <img src={logoUrl} alt="ReCreate Living Logo" className="h-14 md:h-20 w-auto object-contain" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ivory/70">
             Crafted for Comfort. Designed for Life. A Vijayawada atelier
             specializing in bespoke sofas, recliners and sectional designs for

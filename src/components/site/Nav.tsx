@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import logoUrl from "@/assets/logo.png";
 
 const links = [
   { label: "Collections", href: "#collections" },
@@ -32,9 +33,7 @@ export function Nav() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10">
         <a href="#top" className="flex items-center gap-2">
-          <span className="font-display text-xl tracking-wide text-ivory md:text-2xl">
-            ReCreate <span className="text-gold">Living</span>
-          </span>
+          <img src={logoUrl} alt="ReCreate Living Logo" className="h-10 w-auto md:h-14 lg:h-16 object-contain" />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -81,9 +80,7 @@ export function Nav() {
           }`}
         >
           <div className="flex items-center justify-between">
-            <span className="font-display text-xl text-ivory">
-              ReCreate <span className="text-gold">Living</span>
-            </span>
+            <img src={logoUrl} alt="ReCreate Living Logo" className="h-12 w-auto object-contain" />
             <button aria-label="Close" onClick={() => setOpen(false)} className="text-ivory">
               <X className="h-6 w-6" />
             </button>
